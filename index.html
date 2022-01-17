@@ -19,8 +19,27 @@
     <section class="header">  
     <div class="container">
     <img src="images/logo.png" alt="logo">
-        <button type="button" class="logon-btn">Login</button>
+        
+        <button onclick="togglePopup()" class="logon-btn">Login</button>
     </div>
+<div class="popup" id="popup-1">
+    <div class="content1">
+        <div class="close-btn" onclick="togglePopup()">
+     
+           
+         ×</div>
+         <img src="images/logo.png" class="logo">
+          
+        <h1>Login</h1> 
+        
+        <div class="input-field"><input placeholder="Email" class="validate"></div>
+        <div class="input-field"><input placeholder="Password" class="validate"></div>
+         <button class="second-button">Login</button>
+         <p>Don't have an account? <a href="/signup.html">Sign Up</a></p>
+           
+          
+    </div>
+</div>
 
     <h1>TRIP TOKEN</h1>
     <p>Where You Want To Go</p>
@@ -186,7 +205,7 @@
 
                 <div class="row">
                     <div class="col-md-8">
-                        <h2>“Travel is the only thing you buy that makes you richer” – Anonymous.</h2>
+                        <h2>"Travel is the only thing you buy that makes you richer" Anonymous.</h2>
                         
                     </div>
                     <div class="col-md-4">
@@ -274,6 +293,12 @@
             </div>
         </div>
     </section>
+<script>
+    function togglePopup() {
+    document.getElementById("popup-1")
+        .classList.toggle("active");
+}
+</script>
 
     
 </body>
