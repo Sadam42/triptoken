@@ -51,6 +51,8 @@
     padding-top: 240px;
     padding-bottom: 0;
     font-size: 55px;
+    color:linear-gradient(#b4c5d6,#3c393d);
+    
 
     
  }
@@ -85,7 +87,7 @@
 
     width: 100px;
     height: 45px;
-    background-image: linear-gradient(#00ff7e,#1f3d90);
+    background-image: linear-gradient(#b4c5d6,#3c393d);
     border: 0 !important;
     color: white !important;
     padding: 0 25px !important;
@@ -341,110 +343,6 @@
 
 
 
-.popup .content1 {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%,-150%) scale(0);
- width: 300px;
- height: 450px;
- z-index: 2;
- text-align: center;
- padding: 20px;
- border-radius: 20px;
- background-image: linear-gradient(#b4c5d6,#3c393d);
- box-shadow:  38px 38px 56px #1e1e1e, 
-             -25px -25px 38px #1e1e1e;
- z-index: 1;
-}
 
-.content1 .close-btn {
- position: absolute;
- right: 20px;
- top: 20px;
- width: 30px;
- height: 30px;
- color: white;
- font-size: 25px;
- border-radius: 50%;
- padding: 0px 0px 40px 0px;
- background: #292929;
- cursor: pointer;
-
-
- }
-
-.popup.active .content1 {
-transition: all 300ms ease-in-out;
-transform: translate(-50%,-50%) scale(1);
-}
-
-.content1 h1{
- text-align: center;
- font-size: 50px;
- font-weight: 600;
- padding-top: 80px;
- padding-bottom: 10px;
-}
-
-a {
- font-weight: 600;
- color: white;
-}
-
-.input-field .validate {
-padding: 20px;
-font-size: 16px;
-border-radius: 10px;
-border: none;
-margin-bottom: 15px;
-color: #bfc0c0;
-background: #262626;
-box-shadow: inset 5px 5px 5px #232323, 
-            inset -5px -5px 5px #292929;
-outline: none;
-}
-
-
-.logon-btn:active {  
-background: linear-gradient(145deg, #222222, #292929);
-box-shadow:  5px 5px 10px #262626, 
-             -5px -5px 10px #262626;
-border: none;
-}
-
-.second-button {
-color: white;
-font-size: 18px;
-font-weight: 500;
-margin-top: 20px;
-padding: 20px 30px;
-border-radius: 40px;
-border: none;
-background: #262626;
-box-shadow:  8px 8px 15px #202020, 
-             -8px -8px 15px #2c2c2c;
-transition: box-shadow .35s ease !important;
-outline: none;
-}
-
-.second-button:active{
-background: linear-gradient(145deg,#222222, #292929);
-box-shadow: 5px 5px 10px #262626, -5px -5px 10px #262626;
-border: none;
-outline: none;
-}
-p{
-color: #bfc0c0;
-padding: 20px;
-}
-
-.content1 .logo{
-
-
-    padding-top: 10px;
-    right: 20px;
-    width: 10%;
-}
 
 
