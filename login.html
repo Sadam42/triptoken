@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.3/firebase-analytics.js"></script>
+    <script src="login.js"></script>
+
+
     
     <script
       src="https://kit.fontawesome.com/64d58efce2.js"
@@ -21,14 +26,14 @@
             <h2 class="title">LOGIN</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" required>
+              <input type="text" placeholder="Username" id="email" required>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" required>
+              <input type="password" placeholder="Password" id="password" required>
             </div>
             
-            <button type="submit" class="btn solid">Login</button>
+            <button type="submit" class="btn solid" onclick="login()" id="login">Login</button>
             <p class="social-text">Or Login with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
@@ -49,18 +54,18 @@
             <h2 class="title">Sign up</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" required>
+              <input type="text" placeholder="Username" id="username" required>
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" required>
+              <input type="email" placeholder="Email" id="email" required>
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" required>
+              <input type="password" placeholder="Password" id="password" required>
             </div>
             
-            <button type="submit" class="btn">Sign up</button>
+            <button type="submit" class="btn" onclick="signup()" id="signup">Sign up</button>
             <p class="social-text">Or Sign up with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
